@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class WelcomeScreenAndroid extends StatelessWidget {
   const WelcomeScreenAndroid({Key? key}) : super(key: key);
-
+  static const routeName = '/welcome-Android';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -115,7 +115,7 @@ class WelcomeScreenAndroid extends StatelessWidget {
                 child: FlatButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(builder: (_) {
-                      return const MySpaceAndroid();
+                      return MySpaceAndroid();
                     }));
                   },
                   child: const Center(
