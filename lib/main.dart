@@ -1,3 +1,5 @@
+import 'package:fitness_app/screens/my_space_android.dart';
+import 'package:fitness_app/screens/training_session_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
     final platform = Theme.of(context).platform;
     final androidPlatform = platform == TargetPlatform.android;
     return  (androidPlatform)
-        ? const MaterialApp(debugShowCheckedModeBanner: false, home: WelcomeScreenAndroid())
+        ? const MaterialApp(debugShowCheckedModeBanner: false, home: TrainingSessionScreen())
         : const CupertinoApp(debugShowCheckedModeBanner: false, home: WelcomeScreenApple(),);
   }
 }
